@@ -101,7 +101,7 @@
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dLc-t0-7w0">
                                 <rect key="frame" x="20" y="20" width="374" height="200"/>
-                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                <color key="backgroundColor" red="0.64349971617852053" green="0.71995841373096814" blue="0.74304080009460449" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="dLc-t0-7w0" secondAttribute="height" multiplier="187:100" id="O4h-3H-lbl"/>
                                 </constraints>
@@ -120,9 +120,12 @@
                     </view>
                     <connections>
                         <outlet property="blueColorSlider" destination="GuQ-Uo-uXm" id="jQd-KG-1a9"/>
+                        <outlet property="blueColorValue" destination="bvQ-4w-SMF" id="FvX-7l-zAF"/>
                         <outlet property="colorView" destination="dLc-t0-7w0" id="fPN-x5-MlH"/>
                         <outlet property="greenColorSlider" destination="XC2-aG-QTY" id="Wtv-KZ-eTP"/>
+                        <outlet property="greenColorValue" destination="5y4-jz-Bcy" id="wP9-T5-GXW"/>
                         <outlet property="redColorSlider" destination="cyE-d9-0sQ" id="M1N-Lb-8yX"/>
+                        <outlet property="redColorValue" destination="NGm-bK-TSD" id="Bk2-rl-cZP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -133,9 +136,6 @@
     <resources>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemMintColor">
-            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -22,6 +22,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        colorView.layer.cornerRadius = 10
         sliderSetup(color: redColorSlider)
         sliderSetup(color: greenColorSlider)
         sliderSetup(color: blueColorSlider)
@@ -29,8 +31,6 @@ class ViewController: UIViewController {
         redColorSliderAction()
         greenColorSliderAction()
         blueColorSliderAction()
-        
-        colorView.layer.cornerRadius = 10
         
         redColorSlider.minimumTrackTintColor = .red
         greenColorSlider.minimumTrackTintColor = .green

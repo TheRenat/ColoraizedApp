@@ -11,6 +11,8 @@ class SettingViewController: UIViewController {
     
     var delegate: SettingViewControllerDelegate!
     
+    var colours: [CGFloat]!
+    
     @IBOutlet var colorView: UIView!
     
     @IBOutlet var redColorValue: UILabel!
@@ -28,18 +30,23 @@ class SettingViewController: UIViewController {
         colorView.layer.cornerRadius = 10
         
         colorView.backgroundColor = UIColor(
-            red: CGFloat(redColorSlider.value),
-            green: CGFloat(greenColorSlider.value),
-            blue: CGFloat(blueColorSlider.value),
-            alpha: 1
-        )
+            red: CGFloat(colours?[0] ?? 0.0),
+            green: CGFloat(colours?[1] ?? 0.0),
+            blue: CGFloat(colours?[2] ?? 0.5),
+            alpha: 1)
         
         redColorValue.text = (String(format: "%.2f", redColorSlider.value))
         greenColorValue.text = (String(format: "%.2f", greenColorSlider.value))
         blueColorValue.text = (String(format: "%.2f", blueColorSlider.value))
         
+        redColorValue.text = colours?[0].formatted()
+        greenColorValue.text = colours?[0].formatted()
+        blueColorValue.text = colours?[0].formatted()
     }
     
+    @IBAction func DoneButtonPressed() {
+        delegate.setNewValues(red: redColorSlider.value, green: greenColorSlider!.value, blue: blueColorSlider.value)
+    }
     
     @IBAction func rgbSlider(_ sender: UISlider) {
         colorView.backgroundColor = UIColor(

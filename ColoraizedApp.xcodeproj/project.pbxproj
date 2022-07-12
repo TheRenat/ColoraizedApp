@@ -51,8 +51,8 @@
 		949900B3287CC7B200C9FE7D /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				94E794362864F8A7007F9A12 /* LaunchScreen.storyboard */,
 				94E794312864F8A5007F9A12 /* Main.storyboard */,
+				94E794362864F8A7007F9A12 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -63,6 +63,15 @@
 				94E794342864F8A7007F9A12 /* Assets.xcassets */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		949900B7287DEBD800C9FE7D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				949900B5287CC87800C9FE7D /* ColorViewController.swift */,
+				94E7942F2864F8A5007F9A12 /* SettingViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		94E7941F2864F8A5007F9A12 = {
@@ -84,11 +93,10 @@
 		94E7942A2864F8A5007F9A12 /* ColoraizedApp */ = {
 			isa = PBXGroup;
 			children = (
-				949900B2287CC79A00C9FE7D /* App */,
-				94E7942F2864F8A5007F9A12 /* SettingViewController.swift */,
-				949900B5287CC87800C9FE7D /* ColorViewController.swift */,
+				949900B7287DEBD800C9FE7D /* ViewControllers */,
 				949900B3287CC7B200C9FE7D /* Storyboards */,
 				949900B4287CC82700C9FE7D /* Resources */,
+				949900B2287CC79A00C9FE7D /* App */,
 				94E794392864F8A7007F9A12 /* Info.plist */,
 			);
 			path = ColoraizedApp;

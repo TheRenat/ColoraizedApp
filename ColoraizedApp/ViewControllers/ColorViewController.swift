@@ -17,11 +17,11 @@ class ColorViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = UIColor(
-            red: CGFloat(0.5),
-            green: CGFloat(0.5),
-            blue: CGFloat(0.5),
+            red: CGFloat(0.0),
+            green: CGFloat(0.0),
+            blue: CGFloat(0.0),
             alpha: 1)
-    }
+ }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let settingVC = segue.destination as? SettingViewController else { return }

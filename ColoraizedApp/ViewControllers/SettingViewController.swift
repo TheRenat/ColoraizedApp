@@ -35,17 +35,20 @@ class SettingViewController: UIViewController {
             blue: CGFloat(colours?[2] ?? 0.5),
             alpha: 1)
         
-        redColorValue.text = (String(format: "%.2f", redColorSlider.value))
-        greenColorValue.text = (String(format: "%.2f", greenColorSlider.value))
-        blueColorValue.text = (String(format: "%.2f", blueColorSlider.value))
+        redColorValue.text = (String(format:"%.2f", (Float(colours[0]))))
+        greenColorValue.text = (String(format:"%.2f", (Float(colours[1]))))
+        blueColorValue.text = (String(format:"%.2f", (Float(colours[2]))))
         
-        redColorValue.text = colours?[0].formatted()
-        greenColorValue.text = colours?[0].formatted()
-        blueColorValue.text = colours?[0].formatted()
+        redColorSlider.value = Float(colours[0])
+        greenColorSlider.value = Float(colours[1])
+        blueColorSlider.value = Float(colours[2])
     }
     
+    
     @IBAction func DoneButtonPressed() {
-        delegate.setNewValues(red: redColorSlider.value, green: greenColorSlider!.value, blue: blueColorSlider.value)
+        delegate.setNewValues(red: redColorSlider.value,
+                              green: greenColorSlider.value,
+                              blue: blueColorSlider.value)
     }
     
     @IBAction func rgbSlider(_ sender: UISlider) {

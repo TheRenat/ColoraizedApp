@@ -9,6 +9,8 @@ import UIKit
 
 class SettingViewController: UIViewController {
     
+    var delegate: SettingViewControllerDelegate!
+    
     @IBOutlet var colorView: UIView!
     
     @IBOutlet var redColorValue: UILabel!

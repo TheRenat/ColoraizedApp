@@ -15,6 +15,15 @@ class ColorViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //view.backgroundColor = .green
+        
+        view.backgroundColor = UIColor(
+            red: CGFloat(0.1),
+            green: CGFloat(0.2),
+            blue: CGFloat(0.4),
+            alpha: 1
+        )
     }
 }
 // MARK: - SettingViewControllerDelegate

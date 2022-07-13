@@ -29,11 +29,13 @@ class SettingViewController: UIViewController {
         
         colorView.layer.cornerRadius = 10
         
+
+        
         colorView.backgroundColor = UIColor(
             red: CGFloat(colours[0]),
             green: CGFloat(colours[1]),
             blue: CGFloat(colours[2]),
-            alpha: 1)
+            alpha: CGFloat(colours[3]))
         
         redColorValue.text = (String(format:"%.2f", (Float(colours[0]))))
         greenColorValue.text = (String(format:"%.2f", (Float(colours[1]))))
@@ -43,7 +45,6 @@ class SettingViewController: UIViewController {
         greenColorSlider.value = Float(colours[1])
         blueColorSlider.value = Float(colours[2])
     }
-    
     
     @IBAction func DoneButtonPressed() {
         delegate.setNewValues(
@@ -67,3 +68,4 @@ class SettingViewController: UIViewController {
         blueColorValue.text = (String(format: "%.2f", blueColorSlider.value))
     }
 }
+

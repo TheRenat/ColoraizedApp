@@ -11,7 +11,7 @@ class SettingViewController: UIViewController {
     
     var delegate: SettingViewControllerDelegate!
     
-    var colours: [CGFloat]!
+    var colorisedView: UIColor!
     
     @IBOutlet var colorView: UIView!
     

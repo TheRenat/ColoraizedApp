@@ -137,7 +137,7 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="27"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="DoneButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="81g-u0-3Y5"/>
+                                    <action selector="doneButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="81g-u0-3Y5"/>
                                     <segue destination="znZ-Gk-hKF" kind="unwind" unwindAction="unwindFor:sender:" id="kGd-h0-Ts7"/>
                                 </connections>
                             </button>

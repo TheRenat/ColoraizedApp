@@ -143,21 +143,23 @@ extension SettingViewController: UITextFieldDelegate {
                 setValue(for: redColorValue)
             case greenColorTF:
                 greenColorSlider.setValue(currentValue, animated: true)
-                setValue(for: greenColorTF)
+                setValue(for: greenColorValue)
             default:
                 blueColorSlider.setValue(currentValue, animated: true)
-                setValue(for: blueColorTF)
+                setValue(for: blueColorValue)
             }
+            
             setColor()
             return
         }
-        showAlert(title: "Error!", message: "Please enter correct value")
+        
+        showAlert(title: "Wrong format!", message: "Please enter correct value")
     }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        let keyboardToolBar = UIToolbar()
-        keyboardToolBar.sizeToFit()
-        textField.inputAccessoryView = keyboardToolBar
+        let keyboardToolbar = UIToolbar()
+        keyboardToolbar.sizeToFit()
+        textField.inputAccessoryView = keyboardToolbar
         
         let doneButton = UIBarButtonItem(
             barButtonSystemItem: .done,
@@ -170,8 +172,10 @@ extension SettingViewController: UITextFieldDelegate {
             target: nil,
             action: nil
         )
-        keyboardToolBar.items = [flexBarButton, doneButton]
+        
+        keyboardToolbar.items = [flexBarButton, doneButton]
     }
 }
+
 
 
